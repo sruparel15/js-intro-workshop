@@ -43,8 +43,9 @@ function div(num1, num2) {
 console.log(add(5,10));
 console.log(sub(10,4));
 
-// Loops
-function loop(num1,num2,operator) {
+// conditional statements
+function arithmatic
+(num1,num2,operator) {
     if (operator == "+") {
        return add(num1,num2);
     }       
@@ -67,3 +68,31 @@ favouriteFood[0] = 'mango';
 console.log(favouriteFood);
 favouriteFood.push('strawberry');
 console.log(favouriteFood);
+
+//loops
+var number = 0;
+while (number < 10) {
+    console.log(number);
+    number ++;
+}
+
+//log every 3rd number
+for( var i = 3 ; i < 22; i = i + 3 ) {
+    console.log(i);
+}
+
+//FizzBizz
+for ( var i = 1; i < 50; i = i+1) {
+    if (i%15 == 0) {
+        console.log('Fizz');
+    }
+    else if(i%3 == 0) {
+        console.log('Buzz');
+    }
+    else if(i%5 == 0) {
+        console.log('FizzBuzz');
+    }
+    else {
+        console.log(i);
+    }
+}
